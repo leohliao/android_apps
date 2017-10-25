@@ -1,14 +1,30 @@
-function Application () {
+function Application (props) {
+
   return (
     <div className="scoreboard">
       <div className="header">
-        <h1>Scoreboard</h1>
+        <h1>{props.title}</h1>
+      </div>
+
+      <div className="players">
+        <div className="player">
+          <div className="palyer-name">
+            Leo Liao
+          </div>
+          <div className="player-score">
+            <div className="counter">
+              <button className="counter-action decrement"> - </button>
+              <div className="counter-score"> 31 </div>
+              <button className="counter-action increment"> + </button>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
     </div>
   )// end return
 } // function Application
 
-document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(<Application />, document.getElementById("root"))
-});
+ReactDOM.render(<Application title="My Scoreboard" />, document.getElementById("root"));
