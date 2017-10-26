@@ -1,2 +1,4 @@
-reactBasics/*
-M101/*
+reactBasics/*/vendor/**
+M101/*/instruction/**
+
+/**/
