@@ -1,4 +1,6 @@
+!reactBasics/vendor/*
 reactBasics/vendor/*
+!M101/instruction/*
 M101/instruction/*
 
 */*
